@@ -1,0 +1,204 @@
+<!-- 
+<p>ENTERNOW ADMIN DASHBOARD!</p>
+
+<div class="wlc-txt">
+  <p>Admin's Dashboard Page</p>
+</div>
+
+<div class="body-content">
+  <div class="content1">
+    <p>Signins</p>
+    <p>2000</p>
+  </div>
+  <div class="content2">
+    <p>lateness %</p>
+    <p>5%</p>
+  </div>
+  <div class="content3">
+    <p>Early Birds %</p>
+    <p>95</p>
+  </div>
+  <div class="content4">
+    <p>Absent</p>
+    <p>18</p>
+  </div>
+</div>
+
+<div class="staff-container">
+  <div class="staff">
+    <table>
+      <tr>
+        <th>Top Earliest Staff</th>
+      </tr>
+      <tr>
+        <td>Ikiseh1</td>
+        <td>Backend Dev</td>
+      </tr>
+      <tr>
+        <td>Vera</td>
+        <td>Lawyer</td>
+      </tr>
+      <tr>
+        <td>LastBorn</td>
+        <td>Engineer</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="lateness">
+    <table>
+      <tr>
+        <th>Lateness Count</th>
+      </tr>
+      <tr>
+        <td>Tobi</td>
+        <td>1/5</td>
+      </tr>
+      <tr>
+        <td>Seun</td>
+        <td>4/5</td>
+      </tr>
+      <tr>
+        <td>Mayowa</td>
+        <td>5/5</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="signin-section">
+  <button class="create-btn" (click)="toggleForm()">+ Create Sign-In</button>
+
+  <div *ngIf="showForm" class="signin-form">
+    <h3>Manual Sign-In (Security Assist)</h3>
+
+    <form (ngSubmit)="submitForm()">
+      <input type="text" placeholder="Staff ID" [(ngModel)]="staffId" name="staffId" required>
+      <input type="text" placeholder="Staff Name" [(ngModel)]="staffName" name="staffName" required>
+      <input type="text" placeholder="Department" [(ngModel)]="department" name="department" required>
+      <input type="text" placeholder="Time of Entry" [(ngModel)]="time" name="time" required>
+    
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+ -->
+
+<div class="dashboard">
+  <header class="dashboard-header">
+    <h1>ENTER NOW ADMIN DASHBOARD</h1>
+    <p>Welcome, My Admin</p>
+  </header>
+
+  <section class="stats-section">
+    <div class="stat-card orange">
+      <p class="label">Sign-ins</p>
+      <h2>3,000</h2>
+    </div>
+    <div class="stat-card black">
+      <p class="label">Lateness %</p>
+      <h2>10%</h2>
+    </div>
+    <div class="stat-card white">
+      <p class="label">Early Birds %</p>
+      <h2>90%</h2>
+    </div>
+    <div class="stat-card gray">
+      <p class="label">Absent</p>
+      <h2>30</h2>
+    </div>
+  </section>
+
+  <section class="tables-section">
+    <div class="table-card">
+      <h3>Top Earliest Staff</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Atilola</td>
+            <td>Sales Manager</td>
+          </tr>
+          <tr>
+            <td>Guy</td>
+            <td>IT Support</td>
+          </tr>
+          <tr>
+            <td>Damilola</td>
+            <td>Data analyst</td>
+          </tr>
+          <tr>
+            <td>Temijopelo</td>
+            <td>Teaching department</td>
+          </tr>
+          <tr>
+            <td>Abeke</td>
+            <td>Figma designer</td>
+          </tr>
+          <tr>
+            <td>Oyinlola</td>
+            <td>Data support</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-card">
+      <h3>Lateness Count</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ijoba</td>
+            <td>4/5</td>
+          </tr>
+          <tr>
+            <td>Bidemi</td>
+            <td>1/5</td>
+          </tr>
+          <tr>
+            <td>Eliana</td>
+            <td>5/5</td>
+          </tr>
+          <tr>
+            <td>Vincent</td>
+            <td>4/5</td>
+          </tr>
+          <tr>
+            <td>Precious</td>
+            <td>2/5</td>
+          </tr>
+          <tr>
+            <td>Yink</td>
+            <td>1/5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="signin-section">
+    <button class="create-btn" (click)="toggleForm()">+ Create Sign-In</button>
+
+    <div *ngIf="showForm" class="signin-form">
+      <h3>Manual Sign-In (Security Assist)</h3>
+      <form (ngSubmit)="submitForm()">
+        <input type="text" placeholder="Staff ID" [(ngModel)]="staffId" name="staffId" required />
+        <input type="text" placeholder="Staff Name" [(ngModel)]="staffName" name="staffName" required />
+        <input type="text" placeholder="Department" [(ngModel)]="department" name="department" required />
+        <input type="text" placeholder="Time of Entry" [(ngModel)]="time" name="time" required />
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </section>
+</div>

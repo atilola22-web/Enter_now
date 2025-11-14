@@ -1,0 +1,186 @@
+/* dashboard.css */
+
+/* General Page Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffe6f0;
+  /* soft pink background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Header */
+.dashboard-header {
+  text-align: center;
+  background-color: #ff66b2;
+  /* vibrant pink */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 102, 178, 0.3);
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.dashboard-header p {
+  margin: 5px 0 0;
+  font-weight: 500;
+}
+
+/* Stats Section */
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.stat-card {
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Card color variations */
+.orange {
+  background-color: #ff99cc;
+}
+
+.black {
+  background-color: #cc0066;
+}
+
+.white {
+  background-color: #ffb3d9;
+  color: #222;
+}
+
+.gray {
+  background-color: #ff80bf;
+}
+
+/* Tables Section */
+.tables-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.table-card {
+  flex: 1;
+  min-width: 300px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(255, 102, 178, 0.2);
+}
+
+.table-card h3 {
+  text-align: center;
+  color: #ff3385;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border-bottom: 1px solid #ffe6f0;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #ffb3d9;
+  color: #333;
+}
+
+/* Sign-in Section */
+.signin-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.create-btn {
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-btn:hover {
+  background-color: #ff3385;
+}
+
+.signin-form {
+  background: #fff0f5;
+  border: 2px solid #ffb3d9;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(255, 102, 178, 0.2);
+}
+
+.signin-form h3 {
+  color: #ff3385;
+  margin-bottom: 15px;
+}
+
+.signin-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 6px;
+  border: 1px solid #ff99cc;
+}
+
+.submit-btn {
+  background-color: #ff66b2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ff3385;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tables-section {
+    flex-direction: column;
+  }
+}
